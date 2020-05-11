@@ -1,14 +1,16 @@
 
 
 ## Project Name
-Weatheroftoday_app
+Todays-Weather_app
 
 ## Project Description
 
-Check current weather from your current city and gives you a five day forcast.
+Check current weather from your current city and gives you a five day forcast
 +
 a five day forcast
-## API and Data Sample
+## API
+https://openweathermap.org/
+## API  Data Sample
 ```json
 {
     "coord": {
@@ -61,12 +63,16 @@ a five day forcast
 
 #### MVP 
 
-- show current weather
--  Five day forcast.
+- Show current weather.
+- Five day forcast.
+- Allow location pop up. 
+- Ability to seach for a city.
 
 #### PostMVP  
-- Wind mph
+- Wind mph.
 - Humidity percentage.
+- Percipitation.
+- Feels like temp
 
 
 ## Project Schedule
