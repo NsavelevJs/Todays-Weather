@@ -1,0 +1,21 @@
+*{
+    margin: 0rem;
+    padding:0rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body{
+   display: flex;
+    background-size: cover;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    flex-direction: column;
+    margin: 3rem;
+}
+
+/* @media{
+  body{
+      width: 375px;
+  }
+} */
