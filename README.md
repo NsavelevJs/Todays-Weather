@@ -69,10 +69,10 @@ https://openweathermap.org/
 - Ability to seach for a city if location is not allowed.
 
 #### PostMVP  
-- Wind mph.
+- Wind mph for the current city.
 - Humidity percentage.
-- Percipitation.
-- Feels like temp
+- Precipitation percentage.
+- Feels like temperature
 
 
 ## Project Schedule
