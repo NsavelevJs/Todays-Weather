@@ -1,6 +1,4 @@
 *{
-    margin: 0rem;
-    padding:0rem;
     box-sizing: border-box;
     text-align: center;
 }
@@ -12,10 +10,19 @@ body{
     text-align: center;
     flex-direction: column;
     margin: 3rem;
+    background: linear-gradient(to bottom, #ffccff 30%, #ff9933 99%);
+    background-size: cover;
+    min-height: 100vh;
 }
 
-/* @media{
-  body{
-      width: 375px;
-  }
-} */
+#search-bar{
+    width: 280px;  
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    background-color: rgba(147, 94, 49, 0.1);
+    border-radius: 10px 10px 10px 10px;
+    /* background color gives the search bar a faded tint of orange look */
+}
+
+
