@@ -3,6 +3,8 @@ const API_KEY = `e59cccf8df22d601bc301759ce6d0ae5`;
 const search = document.querySelector("#input");
 const BASE_URL = `${DOMAIN}weather?appid=${API_KEY}&q=`;
 
+//api.openweathermap.org/data/2.5/forecast/daily?q={city name}&cnt={cnt}&appid={your api key}
+
 
 
 search.addEventListener("submit", (e) => {
@@ -17,38 +19,47 @@ async function searchResult(value) {
   try {
     let response = await axios.get(BASE_URL + value);
 
-    let data = response.data.main.temp;
-    console.log(response.data);
-    // console.log(data);
+    let data = response.data
+    
+    // console.log(response.data);//gives all the information
+    // console.log(data); // gives the current temp 
 
-    weather(response.data)
+
+    cityName(response.data) // returns only brooklyn
+    
 
 
   } catch (error) {
     `Whoops something went wrong${error}`;
   }
 }
+
+let city = document.querySelector("#selected-city")
+console.log(city)
 // play around with appending elements so that it can be appending on to the webpage
-function weather(forcast){
-   
-        let city = document.querySelector("#selected-city")
-        city.innerHTML = forcast.name
-        list.appendChild(city)
+function cityName(name){
+   console.log(name)
+   console.log(list)
+        // let city = document.querySelector("#selected-city")
+        console.log(city)
+        city.innerHTML = `${name.name}`
+        list.append(city)
 
-        let cWeather = documet.createElement("div")
-
-        let temp = document.createElement('div')
-         
-        temp.innerHTML = forcast.main.temp
-
+        let temp = document.querySelector(".temp")
+        temp.innerHTML = name.weather[0].description
+        // list.appendChild(temp)
+        console.log(temp)
+        
         
 
-        cWeather.innerHTML = forcast.weather.main
-        list.appendChild(cWeather) 
-
+        
 };
 
-
+function currentWeather(conditions){
+  let cWeather = documet.querySelector("#current")
+        cWeather.innerHTML = conditions.weather.description
+        list.appendChild(cWeather) 
+}
 
 
 
