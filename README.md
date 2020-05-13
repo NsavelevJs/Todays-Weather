@@ -65,14 +65,14 @@ https://openweathermap.org/
 
 - Show current weather.
 - Five day forcast.
-- Allow location pop-up to ask for permission to access the devices location. 
-- Ability to seach for a city if location is not allowed.
+- Ability to seach for a city.
 
 #### PostMVP  
 - Wind mph for the current city.
 - Humidity percentage.
 - Precipitation percentage.
 - Feels like temperature
+- Allow location pop-up to ask for permission to access the devices location. 
 
 
 ## Project Schedule
@@ -111,3 +111,4 @@ https://openweathermap.org/
 ```
 
 ## Change Log
+- Moved geolocation down to post mvp
