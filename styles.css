@@ -40,10 +40,14 @@ body{
 }
 
 @media (max-width: 500px) {
-  
+  #search-bar{
+    width: 100px;
+    align-self: center;
+  }
+
     #forecast{
         width: 100px;
-       
+       display: contents;
     
     }
     

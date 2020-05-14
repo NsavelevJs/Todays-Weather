@@ -16,11 +16,13 @@ async function searchResult(value) {
     let response = await axios.get(BASE_URL + value);
     let forecastResponse = await axios.get(BASE_URL2 + value);
 
-    let data = response.data;
+    // let data = response.data;
 
     cityName(response.data);
     removeLastSearch();
     forecast(forecastResponse.data.list);
+    
+
   } catch (error) {
     `Whoops! something went wrong${error}`;
   }
@@ -33,6 +35,7 @@ function cityName(name) {
   city.innerHTML = `${name.name}`;
   weatherDescription.innerHTML = `${name.weather[0].description}<br/>`;
   weatherDescription.innerHTML += `${name.main.temp}℉`;
+  
 }
 
 function forecast(data) {
@@ -52,3 +55,4 @@ function removeLastSearch() {
     oldSearch.removeChild(oldSearch.lastChild);
   }
 }
+
