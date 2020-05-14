@@ -79,11 +79,11 @@ https://openweathermap.org/
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|May 11| Boiler plate HTML and structure, API Connectivity + background styling(decision for wallpaper or linear-gradiant colors.)| Incomplete
-|May 12| Style page with CSS | Incomplete
-|May 12| Setup website api data with JS| Incomplete
-|May 13| Test App, check for bugs and fix | Incomplete
-|May 14| Finalize app and tweek final view. | Incomplete
+|May 11| Boiler plate HTML and structure, API Connectivity + background styling(decision for wallpaper or linear-gradiant colors.)| complete
+|May 12| Style page with CSS | complete
+|May 12| Setup website api data with JS| complete
+|May 13| Test App, check for bugs and fix | complete
+|May 14| Finalize app and tweek final view. | complete
 
 
 ## Priority Matrix
@@ -92,22 +92,22 @@ https://openweathermap.org/
 
 ## Timeframes
 
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| Component | Priority | Estimated Time | Time Invested | 
 | --- | :---: |  :---: | :---: | :---: |
-| Add Boiler plate HTML, Title and find a minimalist background photo or color scheme for the page layout | M | 3hrs|  |  |
-| Design the page with CSS | M | 6hrs|  |  |
-| Test for errors | H | 6hrs|  |  |
-| Connect API to the website with JS| H | 9hrs|  | |
-| Additional css and styling for finished product look| H | 6hrs|  | |
-| Total| N/A | 30hrs|  | |
+| Add Boiler plate HTML, Title and find a minimalist background photo or color scheme for the page layout | M | 3hrs| 2hrs |  |
+| Design the page with CSS | M | 6hrs| 5hrs |  |
+| Test for errors | H | 6hrs| 4hrs |  |
+| Connect API to the website with JS| H | 9hrs| 7hrs | |
+| Additional css and styling for finished product look| H | 6hrs| 3hrs | |
+| Total| N/A | 30hrs| 21hrs | |
 
 
 ## Code Snippet
 
 ```
+const BASE_URL = `${DOMAIN}weather?appid=${API_KEY}&units=imperial&q=`;
 
-
-
+const BASE_URL2 = `${DOMAIN}forecast?appid=${API_KEY}&units=imperial&q=`;
 ```
 
 ## Change Log
