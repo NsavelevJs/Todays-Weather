@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap"
       rel="stylesheet"
@@ -24,32 +23,27 @@
       </form>
 
       <section id="location">
-        <div class="city">Current City:</div>
-        <div id="selected-city"></div>
+        <h2>Current City:</h2>
+        <h2><div id="selected-city"></div></h2>
       </section>
-
+    <h3>
       <div class="temperature">
         <section id="current">
           <div class="current"></div>
 
           <div id="temp">0℉</div>
+    </h3> 
         </section>
       </div>
     </div>
-    
-      <div id="forecast">
-          
-              
+    <h1>FIVE DAY FORECAST</h1>
+    <div id="forecast"></div>
 
-
-         </div>
-
-         <!-- <div id="openweathermap-widget-11"></div> -->
-
-         <!-- <script src='https://openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js'></script> -->
-         
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-    <script  src="app.js"></script>
+    <script src="app.js"></script>
   </body>
+  <footer>
+    <a href="https://openweathermap.org/" target="_blank">Powered by OpenWeather</a>
+  </footer>
 </html>
